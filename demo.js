@@ -26,8 +26,8 @@ function likeCallback(e) {
       // sending of information to the server succeeds.
       alert("You notified the server!");
       alert(serverMessage);
-      // heart.innerText = glyphStates[heart.innerText];
-      // heart.style.color = colorStates[heart.style.color];
+      heart.innerText = glyphStates[heart.innerText];
+      heart.style.color = colorStates[heart.style.color];
     })
     .catch(function(error) {
       alert("Something went wrong!");
@@ -39,9 +39,9 @@ function likeCallback(e) {
 // code when an "event" is fired. That's Pillar 2, event handling. Uncomment
 // this code.
 
-//for (let glyph of articleHearts) {
-  //glyph.addEventListener("click", likeCallback);
-//}
+for (let glyph of articleHearts) {
+  glyph.addEventListener("click", likeCallback);
+}
 
 // STEP 4: 
 
